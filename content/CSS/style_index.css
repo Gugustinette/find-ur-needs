@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "GeosansLight Regular";
+    font-size: 1.1em;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#main_div {
+    height: 90vh;
+    width: 100vw;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#main_div p {
+    font-size: 2vw;
+}
+
+#main_dashboard {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#dashboard {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.db_input_div {
+    width: 80%;
+    height: min-content;
+    display: grid;
+    background-color: #1F1B24;
+    border: #BB86FC solid 1px;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.db_input_div hr {
+    height: min-content;
+    width: 80%;
+    color: #BB86FC;
+}
+
+.input_text {
+    font-size: 1.5vw;
+}
+
+#input_distance {
+    background-color: #121212; 
+    width: 85%; 
+    font-size: 1.5vw;
+}
+
+#input_validate_div a {
+    text-decoration: none;
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #272727;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-aspect-ratio: 9/9) {
+    * {
+        font-size: 3vw;
+    }
+    #main_div {
+        grid-template-rows: 0.5fr 8fr;
+        height: auto;
+    }
+    #main_div p {
+        font-size: 6vw;
+    }
+
+    #main_dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1fr;
+    }
+    #dashboard {
+        grid-template-columns: 1fr;
+        row-gap: 5vh;
+    }
+
+    .input_text {
+        font-size: 6vw;
+    }
+    
+    #input_distance {
+        width: 85%; 
+        font-size: 6vw;
+    }
+
+    #input_validate_div {
+        margin-bottom: 10vh;
+        height: 10vh;
+    }
+}

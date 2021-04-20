@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "GeosansLight Regular";
+    font-size: 1.2vw;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#contact_div {
+    min-height: 90vh;
+    width: 100vw;
+    background-color: #121212;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 2fr 3fr;
+    row-gap: 2vh;
+}
+
+.div_title {
+    font-size: 3vw;
+    max-width: 85vw;
+}
+
+.div_description {
+    font-size: 2vw;
+    max-width: 85vw;
+}
+
+#contact_div_sub {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 2fr 2fr;
+    row-gap: 5vh;
+}
+
+#div_socials {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#div_socials a {
+    display: grid;
+    height: 95%;
+    width: 10vw;
+    transition: 0.2s;
+    justify-items: center;
+    align-items: center;
+}
+
+#div_socials a img{
+    width: 70%;
+}
+
+#div_socials a:hover {
+    transform: rotate(5deg);
+    transition: 0.2s;
+}
+
+@media only screen and (max-aspect-ratio: 9/9) {
+    * {
+        font-size: 3vw;
+    }
+
+    .div_title {
+        font-size: 6vw;
+        max-width: 95vw;
+    }
+    
+    .div_description {
+        font-size: 5vw;
+        max-width: 95vw;
+    }
+
+    #div_socials a {
+        width: 30vw;
+    }
+}

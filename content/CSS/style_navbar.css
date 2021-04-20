@@ -1,0 +1,165 @@
+#navbar {
+    height: 10vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #1F1B24;
+    font-size: 1.4vw;
+}
+
+#navbar_title_holder {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+}
+
+#navbar_title_div {
+    text-decoration: none;
+    margin-left: 2vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 9fr 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+#nav_title_logo {
+    width: 4vw;
+}
+
+#nav_title {
+    font-size: 3vw;
+}
+
+#nav_title_line {
+    grid-column: 1/3;
+    justify-self: left;
+    width: 0;
+    transition: 0.3s;
+    color: rgb(0, 0, 0, 0);
+}
+
+#navbar_title_div:hover #nav_title_line{
+    width: 100%;
+    transition: 0.3s;
+    color: inherit;
+}
+
+#navbar_button_holder {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: inherit;
+}
+
+.navbar_button {
+    height: 100%;
+    width: 95%;
+    background-color: #1F1B24;
+    transition: 0.2s;
+    border-left: #BB86FC solid 1px;
+    border-right: #BB86FC solid 1px;
+    border-bottom: #BB86FC solid 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: inherit;
+}
+
+.navbar_button a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: inherit;
+}
+
+.navbar_button a p {
+    font-size: inherit;
+}
+
+.navbar_button a img {
+    height: 5vh;
+    transition: 0.3s;
+}
+
+.navbar_arrow_clicked {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.navbar_button:hover {
+    background-color: #BB86FC;
+    height: 110%;
+    transition: 0.2s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar_button_mobile {
+    display: none;
+}
+
+@media only screen and (max-aspect-ratio: 9/9) {
+    #navbar {
+        margin-top: -30vh;
+        height: 40vh;
+        grid-template-columns: 1fr 2fr;
+        font-size: 4vw;
+        transition: 0.2s;
+    }
+
+    #navbar_title_div {
+        align-self: flex-end;
+        height: 10vh;
+        width: 100%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #nav_title_logo {
+        height: 9vh;
+        width: auto;
+    }
+
+    #nav_title {
+        display: none;
+    }
+    #nav_title_line {
+        display: none;
+    }
+
+    #navbar_button_holder {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .navbar_button {
+        width: 95%;
+        justify-self: right;
+        border-right: 0;
+        border-bottom: 0;
+        border-bottom-left-radius: 0px;
+    }
+
+    .navbar_button:hover {
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .navbar_button_mobile {
+        display: unset;
+    }
+
+    #navbar.navbar_clicked {
+        margin-top: 0;
+        transition: 0.2s;
+    }
+}

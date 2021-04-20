@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.5754278, 47.2292353]
+            },
+            "properties": {
+                "title": "Les restos du Coeur - ACCUEIL DE JOUR FEMMES",
+                "description": "Ouvert 3 jours par semaine (lundi, jeudi et vendredi de 11h à 16 h)",
+                "address" : "2 bis Boulevard Boulay Paty <br> 44100, Nantes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.6393276453018188, 47.22526931762695]
+            },
+            "properties": {
+                "title": "Les Restaurants du Coeur",
+                "description": "Ouvert 4 jours par semaine (mardi, mercredi, jeudi et vendredi, de 10h à 12h et de 14h à 16h)",
+                "address" : " 4 Rue Gustave Eiffel <br> 44800, St Herblain"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [2.4103364, 48.8927393]
+            },
+            "properties": {
+                "title": "Boucherie SARAY",
+                "description": "Tous les jours, 8:30 -> 20:20",
+                "address" : "115 Avenue Jean Lolive <br> 93500, Pantin"
+            }
+        }
+    ]
+}
