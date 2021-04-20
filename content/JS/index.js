@@ -1,7 +1,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ3VndXN0aW5ldHRlIiwiYSI6ImNrbmpjcjhmZDBnMHoyd21ncW5uYzBocHIifQ.IxR7BOlUj0aEb1ZWdbLP5A';
 
 // Store URL (should be https://findurneeds.fr)
-let URL_fun = "ws://localhost:8080"
+let URL_fun = "https://findurneeds.fr"
 
 // Create WebSocket connection with URL
 const socket = io(URL_fun, {

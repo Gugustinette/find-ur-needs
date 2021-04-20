@@ -1,7 +1,7 @@
 {
   "name": "findurneeds",
   "version": "1.0.0",
-  "description": "Website for finding your needs",
+  "description": "Public non-profit website to help those in need. ",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
